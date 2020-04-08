@@ -1,0 +1,8 @@
+<div class="container">
+  <label>
+    Username
+    <input type="text" [(ngModel)]="username">
+  </label>
+  {{username}}
+  <button [disabled]="username === ''" (click)="login()">Login</button>
+</div>
